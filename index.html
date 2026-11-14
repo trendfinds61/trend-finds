@@ -359,10 +359,7 @@ body.tray-open .to-top{bottom:96px}
     <div id="subBody">
       <h2>Subscribe to Trend Finds</h2>
       <p>Get new finds and best deals in your inbox every week. No spam.</p>
-      <form class="sub-form" id="subForm">
-        <input type="email" id="subEmail" placeholder="Your email address" aria-label="Email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
+      <script async src="https://eocampaign1.com/form/98948012-dde2-11f1-995c-f96c840d70ad.js" data-form="98948012-dde2-11f1-995c-f96c840d70ad"></script>
     </div>
   </div>
 </div>
@@ -517,16 +514,10 @@ $('#trayGo').addEventListener('click', function(){
 function escHtml(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 $('#cmpClose').addEventListener('click', function(){ $('#cmpModal').classList.remove('open'); });
 $('#cmpModal').addEventListener('click', function(e){ if (e.target === this) this.classList.remove('open'); });
-// subscribe modal (demo: no backend yet)
+// subscribe modal — real EmailOctopus form (ID 98948012...) handles the submit itself
 $('#subFab').addEventListener('click', function(){ $('#subModal').classList.add('open'); });
 $('#subClose').addEventListener('click', function(){ $('#subModal').classList.remove('open'); });
 $('#subModal').addEventListener('click', function(e){ if (e.target === this) this.classList.remove('open'); });
-$('#subForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  var em = $('#subEmail').value.trim();
-  if (!em || em.indexOf('@') === -1) { alert('Please enter a valid email address.'); return; }
-  $('#subBody').innerHTML = '<p style="font-size:16px">🎉 <b>Thanks for subscribing!</b><br>New finds and deals will land in your inbox every week.</p>';
-});
 // subscribe button text rotates while it keeps bobbing
 var subMsgs = ['Trend Find Subscribe', 'Join Trend Finds 💌', 'New deals every week 🔥', "Subscribe — it's free ✨"];
 var subI = 0, subText = $('#subText');
