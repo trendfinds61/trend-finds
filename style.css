@@ -131,7 +131,7 @@ main.home { max-width: 1060px; }
 .follow-btn.quora { background: #b92b27; }
 
 /* premium product cards (category pages) */
-.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .card{background:#fff;border:1px solid #f1f1f1;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 20px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.05);transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(0,0,0,.13),0 4px 10px rgba(0,0,0,.06)}
 .card-img{display:block;position:relative;background:#f3f4f6}
@@ -150,7 +150,7 @@ main.home { max-width: 1060px; }
 /* category cards, old-site style: Shop Now overlaps the image bottom edge, no underline on titles */
 .card .card-body{padding:26px 14px 14px;font-family:Arial,Helvetica,sans-serif}
 .card .card-body h3 a{text-decoration:none}
-.card .view-link{text-decoration:none}
+.card .view-link{text-decoration:none;white-space:nowrap}
 .card-body .labels{display:none}
 .card-img .shop-now-btn{position:absolute;left:50%;bottom:0;transform:translate(-50%,50%);width:max-content;min-width:150px;padding:10px 22px;border-radius:12px;z-index:2;text-decoration:none}
 .view-link{font-size:14px;font-weight:700;color:#0b5cad}
