@@ -1,0 +1,71 @@
+/* Trend Finds — shared stylesheet (minimal, mobile-first) */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: #222; background: #fff; line-height: 1.7; font-size: 17px; }
+.site-header { background: #111; color: #fff; padding: 22px 20px 14px; text-align: center; }
+.site-header a { color: #fff; text-decoration: none; }
+.site-name { margin: 0; font-size: 1.9em; font-weight: bold; letter-spacing: .5px; }
+.tagline { margin: 4px 0 12px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ddd; }
+.site-header nav { font-family: Arial, Helvetica, sans-serif; font-size: 15px; }
+.site-header nav a { margin: 0 10px; color: #ddd; }
+.site-header nav a:hover { color: #fff; text-decoration: underline; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 20px 40px; }
+h1, h2, h3 { line-height: 1.3; }
+h1 { font-size: 1.65em; }
+a { color: #0b5cad; }
+img { max-width: 100%; height: auto; }
+.post-date { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666; margin: 4px 0 12px; }
+.labels { margin: 0 0 18px; }
+.label { display: inline-block; font-family: Arial, Helvetica, sans-serif; font-size: 12px; background: #f0f0f0; border-radius: 20px; padding: 3px 10px; margin: 0 6px 6px 0; color: #333; text-decoration: none; }
+a.label:hover { background: #e0e0e0; }
+.best-for { font-family: Arial, Helvetica, sans-serif; font-size: 15px; background: #eef7ee; border-left: 4px solid #2e7d32; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 0 0 18px; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+.post-list h2 { font-size: 1.25em; margin: 0 0 4px; }
+.post-list h2 a { text-decoration: none; color: #111; }
+.post-list h2 a:hover { text-decoration: underline; }
+.back-link { font-family: Arial, Helvetica, sans-serif; display: inline-block; margin-bottom: 16px; }
+.hero { text-align: center; padding: 10px 0 6px; border-bottom: 1px solid #eee; margin-bottom: 20px; }
+.hero h1 { font-size: 2em; margin: 0; }
+.hero .tagline { font-family: Arial, Helvetica, sans-serif; color: #555; font-size: 16px; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; list-style: none; padding: 0; }
+.category-grid a { display: block; border: 1px solid #ddd; border-radius: 8px; padding: 12px; text-decoration: none; color: #111; font-family: Arial, Helvetica, sans-serif; }
+.category-grid a:hover { border-color: #0b5cad; }
+.category-grid .count { color: #666; font-size: 13px; }
+.search-box { width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; margin: 8px 0 4px; }
+.search-note { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #666; }
+.disclosure-top { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #666; background: #f7f7f7; border-radius: 8px; padding: 10px 14px; }
+.disclosure-note { font-size: 13px; color: #666; background: #f7f7f7; padding: 12px 14px; border-radius: 8px; }
+.notice { background: #fff7ed; border-left: 4px solid #f59e0b; padding: 12px 14px; border-radius: 0 8px 8px 0; }
+.verdict, .key-facts, .compare, .pros-cons, .faq, .buy-box, .more-posts { margin-top: 28px; border: 1px solid #e2e2e2; border-radius: 10px; padding: 16px 18px; }
+.verdict { background: #f0f7ff; border-color: #bcd7f5; }
+.verdict h2, .key-facts h2, .compare h2, .pros-cons h2, .faq h2, .more-posts h2 { margin-top: 0; font-size: 1.15em; }
+.key-facts { background: #fafafa; }
+.key-facts ul, .pros-cons ul { margin: 8px 0 0; padding-left: 20px; }
+.gallery { display: flex; overflow-x: auto; gap: 12px; scroll-snap-type: x mandatory; padding: 6px 2px 14px; margin: 18px 0; }
+.gallery .slide { flex: 0 0 84%; max-width: 420px; scroll-snap-align: center; text-align: center; border: 1px solid #eee; border-radius: 12px; padding: 10px; background: #fff; margin: 0; }
+.gallery .slide img { width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 8px; display: block; }
+.shop-btn { display: inline-block; background: #171717; color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 6px; font-weight: bold; margin: 12px auto 4px; font-family: Arial, Helvetica, sans-serif; }
+.deal-card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 16px 0; background: #fff; }
+.deal-card h3 { margin-top: 0; }
+.compare-table-wrap { overflow-x: auto; margin: 12px 0; }
+table.compare-table { border-collapse: collapse; width: 100%; font-family: Arial, Helvetica, sans-serif; font-size: 14px; min-width: 480px; }
+table.compare-table th, table.compare-table td { border: 1px solid #ddd; padding: 9px 10px; text-align: left; vertical-align: top; }
+table.compare-table th { background: #111; color: #fff; }
+table.compare-table td:first-child, table.compare-table th:first-child { font-weight: bold; background: #f7f7f7; color: #222; }
+.pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.buy-box { text-align: center; background: #fff8e6; border-color: #f0d48a; }
+.buy-box .buy-btn { display: inline-block; background: #ff9900; color: #fff; padding: 14px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 8px; font-family: Arial, Helvetica, sans-serif; margin: 6px; }
+.faq h3 { font-size: 1.05em; margin: 14px 0 4px; }
+.faq p { margin: 0 0 10px; }
+.more-posts { border: none; padding: 16px 0 0; }
+.more-posts ul { padding-left: 20px; }
+footer { max-width: 760px; margin: 0 auto; padding: 20px; border-top: 1px solid #ddd; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #666; }
+footer a { color: #555; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.4em; }
+  .hero h1 { font-size: 1.7em; }
+  .site-name { font-size: 1.6em; }
+  .pros-cons { grid-template-columns: 1fr; }
+  .gallery .slide { flex-basis: 88%; }
+}
